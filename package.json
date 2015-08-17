@@ -1,0 +1,17 @@
+{
+  "name": "tracker-demo",
+  "version": "1.0.0",
+  "description": "A web app for tracking time spent on projects using node, angular, and bootstrap.",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-route": "^1.4.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "josieb",
+  "license": "ISC"
+}
