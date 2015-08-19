@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.4.4",
     "angular-route": "^1.4.4",
+    "bootstrap": "^3.3.5",
     "express": "^4.13.3"
   },
   "devDependencies": {},

@@ -4,7 +4,8 @@
 angular.module('trackerDemo', [
   'ngRoute',
   'trackerDemo.main'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/trackerDemo'});
+])
+
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.otherwise({redirectTo: '/main'});
 }]);
