@@ -13,7 +13,15 @@ angular.module('trackerDemo.main', ['ngRoute'])
   $scope.entry = {};
   $scope.storage = {};
 
+  /**
+   * Event handler for form submit. Add the entry to the client storage and
+   * redraw the chart.
+   */
   $scope.addEntry = function() {
+    /**
+     * This needs more input validation, i.e. try to parse integers here and
+     * alert for invalid types.
+     */
     for (var k in $scope.entry) {
       if ($scope.entry[k] === null) {
         alert(k + ' was left blank');
@@ -34,6 +42,10 @@ angular.module('trackerDemo.main', ['ngRoute'])
       $scope.storage[$scope.entry.project][month] += parseInt($scope.entry.timeSpent);
     }
 
+    /**
+     * ChartJS line graphs don't seem to have concepts of time, more work needs
+     * to be done here to support multi-year entries.
+     */
     var data = {
       labels: ["January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December"]
