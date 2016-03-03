@@ -1,4 +1,4 @@
-# Challenge for Front End Developer
+# Tracker Demo
 authored by: joseph.baham@gmail.com
 
 The development server can be started by running:
